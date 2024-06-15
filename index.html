@@ -3,44 +3,45 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AP</title>
 
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <!-- <link rel="stylesheet" href="./src/css/style.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body id="top">
+<body id="top" class="bg-rose-300 grid grid-cols-1 mx-12 justify-center text-center">
 
-    <header>
-        <p class="join-us allura-regular " data-aos="zoom-out" data-aos-anchor-placement="bottom"
+    <header class="h-screen">
+        <p class="allura-regular text-xs h-1/6" data-aos="zoom-out" data-aos-anchor-placement="bottom"
             data-aos-duration=" 2000">
             Join us <br>for the wedding of
         </p>
-        <h1 class="yellowtail-regular welcome-title" data-aos="zoom-out" data-aos-anchor-placement="bottom"
+        <h1 class="yellowtail-regular text-5xl h-2/6" data-aos="zoom-out" data-aos-anchor-placement="bottom"
             data-aos-duration=" 2000" data-aos-delay="1000" data-aos-easing="ease-out-cubic">
             Artika <br />&<br>
             Pathomporn
         </h1>
-        <div class="image-frame" data-aos="flip-right" data-aos-anchor-placement="bottom" data-aos-duration="2500"
+        <div class="h-3/6" data-aos="flip-right" data-aos-anchor-placement="bottom" data-aos-duration="2500"
             data-aos-delay="1000" data-aos-easing="ease-out-cubic">
             <img src="./src/assets/img/couple.png" alt="">
         </div>
     </header>
 
 
-    <section id="wedding">
-
-        <div class="wedding-heading" data-aos="fade-left" data-aos-anchor-placement="center-center"
-            data-aos-duration="500">
-            <h1 class="concert-one-regular wedding-title">
+    <section>
+        <!-- Date -->
+        <div class="h-80 grid grid-cols-1 justify-center text-center" data-aos="fade-up"
+            data-aos-anchor-placement="center-center" data-aos-duration="1000" data-aos-delay="500">
+            <h1 class="flex justify-center justify-items-center items-center">
                 <svg fill="#000000" width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" id="date-star"
                     data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line" stroke="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -59,9 +60,10 @@
             </h1>
         </div>
 
-        <div class="wedding-heading" data-aos="fade-right" data-aos-anchor-placement="center-center"
-            data-aos-duration="500">
-            <h1 class="concert-one-regular wedding-title">
+        <!-- Where -->
+        <div class="h-[100px] mt-[100px] grid grid-cols-1 justify-center justify-items-bottom text-center"
+            data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="500">
+            <div class="flex justify-center justify-items-center items-center">
                 <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
                     stroke="#000000">
@@ -87,47 +89,57 @@
                     </g>
                 </svg>
                 At A' La Campagne Pattaya
-            </h1>
-        </div>
-        <div class="wedding-flex" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1000">
-            <div class="wedding-content">
-                <a href="" target="_blank" class="wedding-map" id="map">
-                    <svg height="30px" width="30px" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432.49 432.49" xml:space="preserve"
-                        fill="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g>
-                                <g>
-                                    <path style="fill:none;"
-                                        d="M178.568,137.364c0,20.775,16.901,37.677,37.677,37.677s37.677-16.901,37.677-37.677 c0-20.774-16.901-37.677-37.677-37.677S178.568,116.59,178.568,137.364z">
-                                    </path>
-                                    <path style="fill:none;"
-                                        d="M225.096,370.187c-2.273,2.482-5.484,3.895-8.851,3.895c-3.366,0-6.577-1.413-8.851-3.895 c-0.99-1.082-18.303-20.045-40.335-47.596l-99.61,34.143l148.482,51.069l149.109-51.108l-99.512-34.227 C243.449,350.084,226.088,369.103,225.096,370.187z">
-                                    </path>
-                                    <path style="fill:#fbbced;"
-                                        d="M95.855,144.392c0,52.005,80.011,153.768,120.39,199.706 c40.379-45.951,120.392-147.736,120.392-199.706C336.636,78.008,282.629,24,216.245,24S95.855,78.008,95.855,144.392z M216.245,75.688c34.009,0,61.677,27.668,61.677,61.677c0,34.009-27.668,61.677-61.677,61.677s-61.677-27.668-61.677-61.677 C154.568,103.356,182.236,75.688,216.245,75.688z">
-                                    </path>
-                                    <path style="fill:#ffffff;"
-                                        d="M405.897,345.366l-124.755-42.908c3.628-4.769,7.303-9.681,10.987-14.721 c45.457-62.194,68.507-110.423,68.507-143.346C360.636,64.773,295.862,0,216.245,0S71.855,64.773,71.855,144.392 c0,32.923,23.05,81.151,68.507,143.346c3.715,5.081,7.42,10.033,11.076,14.837L26.606,345.362 c-4.848,1.662-8.105,6.22-8.108,11.346c-0.003,5.125,3.251,9.687,8.097,11.354l185.428,63.776 c1.265,0.434,2.584,0.652,3.902,0.652c1.315,0,2.631-0.216,3.892-0.648l186.069-63.776c4.848-1.661,8.105-6.22,8.108-11.345 C413.996,351.595,410.743,347.033,405.897,345.366z M336.636,144.392c0,51.97-80.013,153.755-120.392,199.706 c-40.379-45.938-120.39-147.701-120.39-199.706C95.855,78.008,149.861,24,216.245,24S336.636,78.008,336.636,144.392z M215.932,407.803L67.449,356.733l99.61-34.143c22.032,27.551,39.345,46.514,40.335,47.596c2.274,2.482,5.484,3.895,8.851,3.895 c3.366,0,6.577-1.413,8.851-3.895c0.992-1.084,18.354-20.103,40.434-47.719l99.512,34.227L215.932,407.803z">
-                                    </path>
-                                    <path style="fill:#ffffff;"
-                                        d="M216.245,199.041c34.009,0,61.677-27.668,61.677-61.677c0-34.009-27.668-61.677-61.677-61.677 s-61.677,27.668-61.677,61.677C154.568,171.373,182.236,199.041,216.245,199.041z M253.922,137.364 c0,20.775-16.901,37.677-37.677,37.677s-37.677-16.901-37.677-37.677c0-20.774,16.901-37.677,37.677-37.677 S253.922,116.59,253.922,137.364z">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    เปิดแมพ
-                </a>
-                <img src="./src/assets/img/map.png" alt="" />
             </div>
         </div>
 
-        <div class="wedding-heading" data-aos="fade-left" data-aos-anchor-placement="top-center"
-            data-aos-duration="500">
-            <h1 class="concert-one-regular wedding-title">
+        <!-- Map -->
+        <div class="h-[300px] text-center" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="1000" data-aos-delay="500">
+            <div class="flex justify-end">
+                <a href="" class="" target="_blank" id="map">
+                    <span class="flex">
+                        <svg height="30px" width="30px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 432.49 432.49" xml:space="preserve"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path style="fill:none;"
+                                            d="M178.568,137.364c0,20.775,16.901,37.677,37.677,37.677s37.677-16.901,37.677-37.677 c0-20.774-16.901-37.677-37.677-37.677S178.568,116.59,178.568,137.364z">
+                                        </path>
+                                        <path style="fill:none;"
+                                            d="M225.096,370.187c-2.273,2.482-5.484,3.895-8.851,3.895c-3.366,0-6.577-1.413-8.851-3.895 c-0.99-1.082-18.303-20.045-40.335-47.596l-99.61,34.143l148.482,51.069l149.109-51.108l-99.512-34.227 C243.449,350.084,226.088,369.103,225.096,370.187z">
+                                        </path>
+                                        <path style="fill:#fbbced;"
+                                            d="M95.855,144.392c0,52.005,80.011,153.768,120.39,199.706 c40.379-45.951,120.392-147.736,120.392-199.706C336.636,78.008,282.629,24,216.245,24S95.855,78.008,95.855,144.392z M216.245,75.688c34.009,0,61.677,27.668,61.677,61.677c0,34.009-27.668,61.677-61.677,61.677s-61.677-27.668-61.677-61.677 C154.568,103.356,182.236,75.688,216.245,75.688z">
+                                        </path>
+                                        <path style="fill:#ffffff;"
+                                            d="M405.897,345.366l-124.755-42.908c3.628-4.769,7.303-9.681,10.987-14.721 c45.457-62.194,68.507-110.423,68.507-143.346C360.636,64.773,295.862,0,216.245,0S71.855,64.773,71.855,144.392 c0,32.923,23.05,81.151,68.507,143.346c3.715,5.081,7.42,10.033,11.076,14.837L26.606,345.362 c-4.848,1.662-8.105,6.22-8.108,11.346c-0.003,5.125,3.251,9.687,8.097,11.354l185.428,63.776 c1.265,0.434,2.584,0.652,3.902,0.652c1.315,0,2.631-0.216,3.892-0.648l186.069-63.776c4.848-1.661,8.105-6.22,8.108-11.345 C413.996,351.595,410.743,347.033,405.897,345.366z M336.636,144.392c0,51.97-80.013,153.755-120.392,199.706 c-40.379-45.938-120.39-147.701-120.39-199.706C95.855,78.008,149.861,24,216.245,24S336.636,78.008,336.636,144.392z M215.932,407.803L67.449,356.733l99.61-34.143c22.032,27.551,39.345,46.514,40.335,47.596c2.274,2.482,5.484,3.895,8.851,3.895 c3.366,0,6.577-1.413,8.851-3.895c0.992-1.084,18.354-20.103,40.434-47.719l99.512,34.227L215.932,407.803z">
+                                        </path>
+                                        <path style="fill:#ffffff;"
+                                            d="M216.245,199.041c34.009,0,61.677-27.668,61.677-61.677c0-34.009-27.668-61.677-61.677-61.677 s-61.677,27.668-61.677,61.677C154.568,171.373,182.236,199.041,216.245,199.041z M253.922,137.364 c0,20.775-16.901,37.677-37.677,37.677s-37.677-16.901-37.677-37.677c0-20.774,16.901-37.677,37.677-37.677 S253.922,116.59,253.922,137.364z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="flex items-center">
+                            เปิดแมพ
+                        </p>
+
+                    </span>
+                </a>
+            </div>
+            <img src="./src/assets/img/map.png" class="rounded-md mt-3 shadow-xl" alt="" />
+        </div>
+
+
+        <!-- Theme -->
+        <div class="h-[150px] grid grid-cols-1 justify-center text-center" data-aos="fade-left"
+            data-aos-anchor-placement="center-center" data-aos-duration="500">
+            <div class="flex justify-center items-center text-center">
                 <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" fill="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -142,33 +154,41 @@
                     </g>
                 </svg>
                 Theme
-            </h1>
-        </div>
-
-        <div class="wedding-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
-            <div class="wedding-content wedding-theme">
-                <canvas width=500 height=500 id="theme1">
             </div>
-            <p>#EFD6D0</p>
         </div>
-        <div class="wedding-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-            <div class="wedding-content wedding-theme">
-                <canvas width=500 height=500 id="theme2">
+        <div class="h-[calc(100vh-150px)] w-full overflow-x-scroll" data-aos="flip-up" data-aos-duration="1000"
+            data-aos-anchor-placement="top-center" data-aos-delay="500">
+
+            <div class="w-full flex">
+                <div class="w-[150px] mx-5">
+                    <div class="">
+                        <canvas class="w-[150px] h-[150px] rounded-full" id="theme1">
+                    </div>
+                    <p>#EFD6D0</p>
+                </div>
+
+                <div class="w-[150px] mx-5">
+                    <div class="">
+                        <canvas class="w-[150px] h-[150px] rounded-full" id="theme2">
+                    </div>
+                    <p>#CDBBA9</p>
+                </div>
+
+                <div class="w-[150px] mx-5">
+                    <div class="">
+                        <canvas class="w-[150px] h-[150px] rounded-full" id="theme3">
+                    </div>
+                    <p>#F1ECE6</p>
+                </div>
             </div>
-            <p>#CDBBA9</p>
-        </div>
-        <div class="wedding-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
-            <div class="wedding-content wedding-theme">
-                <canvas width=500 height=500 id="theme3">
-            </div>
-            <p>#F1ECE6</p>
         </div>
 
 
 
-
-        <div class="wedding-heading" style="height:100px;" data-aos="fade-left" data-aos-duration="500">
-            <h1 class="concert-one-regular wedding-title">
+        <!-- Timeline -->
+        <div class="h-[150px] grid grid-cols-1 justify-center justify-items-bottom text-center" data-aos="fade-down"
+            data-aos-anchor-placement="center-center" data-aos-duration="500">
+            <div class="flex justify-center items-center text-center">
                 <svg fill="#000000" width="64px" height="64px" viewBox="0 0 36 36" version="1.1"
                     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -186,68 +206,154 @@
                     </g>
                 </svg>
                 Timeline
-            </h1>
+            </div>
         </div>
 
 
+        <div class="h-[calc(100vh-150px)]" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="p-4 max-w-md mx-auto flow-root">
+                <ul role="list" class="-mb-8">
 
-        <ul class="timeline" data-aos="fade-up" data-aos-duration="500">
-            <!-- Item 1 -->
-            <li data-aos="fade-left" data-aos-duration="1000">
-                <div class="direction-r">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="flag">พิธีเจริญพระพุทธมนต์</span>
-                        <span class="time-wrapper"><span class="time">07:09</span></span>
-                    </div>
-                </div>
-            </li>
+                    <!-- Event 1 -->
+                    <li>
+                        <div class="relative pb-8">
+                            <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200"
+                                aria-hidden="true"></span>
+                            <div class="relative flex space-x-3">
+                                <div>
+                                    <span
+                                        class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white">
+                                        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                    <div>
+                                        <p class="text-sm text-gray-500">พิธีเจริญพระพุทธมนต์</p>
+                                    </div>
+                                    <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                        <time datetime="2020-09-20">07:09</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-            <!-- Item 2 -->
-            <li data-aos="fade-right" data-aos-duration="1000">
-                <div class="direction-l">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="flag">พิธีแห่ขันหมาก</span>
-                        <span class="time-wrapper"><span class="time">08:09</span></span>
-                    </div>
-                </div>
-            </li>
+                    <!-- EVent 2 -->
+                    <li>
+                        <div class="relative pb-8">
+                            <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200"
+                                aria-hidden="true"></span>
+                            <div class="relative flex space-x-3">
+                                <div>
+                                    <span
+                                        class="h-8 w-8 rounded-full  flex items-center justify-center ring-8 ring-white">
+                                        <img class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true"
+                                            src="https://t3.ftcdn.net/jpg/04/14/78/90/360_F_414789044_6xD0f4z9YcHfQimfnighWoUCIqgEJ66G.jpg" />
 
-            <!-- Item 3 -->
-            <li data-aos="fade-left" data-aos-duration="1000">
-                <div class="direction-r">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="flag">พิธีสวมแหวน</span>
-                        <span class="time-wrapper"><span class="time">09:09</span></span>
-                    </div>
-                </div>
-            </li>
+                                    </span>
+                                </div>
+                                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                    <div>
+                                        <p class="text-sm text-gray-500">พิธีแห่ขันหมาก</p>
+                                    </div>
+                                    <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                        <time datetime="2020-09-22">08:09</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-            <!-- Item 4 -->
-            <li data-aos="fade-right" data-aos-duration="1000">
-                <div class="direction-l">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="flag">พิธีหลั่งน้ำพระพุทธมนต์</span>
-                        <span class="time-wrapper"><span class="time">10:09</span></span>
-                    </div>
-                </div>
-            </li>
+                    <!-- Event  3 -->
+                    <li>
+                        <div class="relative pb-8">
+                            <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200"
+                                aria-hidden="true"></span>
+                            <div class="relative flex space-x-3">
+                                <div>
+                                    <span
+                                        class="h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white">
+                                        <img class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true"
+                                            src="https://c8.alamy.com/comp/2RC5DTJ/taking-off-plane-logo-2RC5DTJ.jpg"
+                                            clip-rule="evenodd" />
 
-            <!-- Item 5 -->
-            <li data-aos="fade-left" data-aos-duration="1000">
-                <div class="direction-r">
-                    <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <span class="flag">เลี้ยงฉลองมงคลสมรส</span>
-                        <span class="time-wrapper"><span class="time">18:00</span></span>
-                    </div>
-                </div>
-            </li>
+                                    </span>
+                                </div>
+                                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                    <div>
+                                        <p class="text-sm text-gray-500">พิธีสวมแหวน</p>
+                                    </div>
+                                    <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                        <time datetime="2020-09-28">09:09</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-        </ul>
+                    <!-- Event  4 -->
+                    <li>
+                        <div class="relative pb-8">
+                            <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200"
+                                aria-hidden="true"></span>
+                            <div class="relative flex space-x-3">
+                                <div>
+                                    <span
+                                        class="h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white">
+                                        <img class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true"
+                                            src="https://res.cloudinary.com/teepublic/image/private/s--AwgOGWhQ--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1615488250/production/designs/20135311_0.jpg" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                    <div>
+                                        <p class="text-sm text-gray-500">พิธีหลั่งน้ำพระพุทธมนต์</p>
+                                    </div>
+                                    <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                        <time datetime="2020-09-30">10:09</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Event 5 -->
+                    <li>
+                        <div class="relative pb-8">
+                            <div class="relative flex space-x-3">
+                                <div>
+                                    <span
+                                        class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
+                                        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                    <div>
+                                        <p class="text-sm text-gray-500">เลี้ยงฉลองมงคลสมรส</p>
+                                    </div>
+                                    <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                                        <time datetime="2020-10-04">18:00</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
     </section>
 
@@ -303,5 +409,6 @@
         }
     </script>
 </body>
+
 
 </html>
